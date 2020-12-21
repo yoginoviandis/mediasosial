@@ -1,0 +1,12 @@
+read -p "penginstallan apache2 (Y/n) " pilih;
+
+if [[ $pilih = "Y" || $pilih = "y" ]];
+then
+        echo "menginstall apache2"
+             apt-get install apache2
+        echo "penginstallan selesai"
+        exit 0
+else
+        echo "penginstallan dibatalkan"
+        exit 1
+fi
